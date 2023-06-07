@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+@import url(unread-component.css);
+:root{
+    --red:hsl(1, 90%, 64%);
+    --blue:hsl(219, 85%, 26%);
+    --white:hsl(0, 0%, 100%);
+    --very-light-grayish-blue:hsl(210, 60%, 98%);
+    --light-grayish-blue1:hsl(211, 68%, 94%);
+    --light-grayish-blue2:hsl(205, 33%, 90%);
+    --grayish-blue:hsl(219, 14%, 63%);
+    --dark-grayish-blue:hsl(219, 12%, 42%);
+    --very-dark-blue:hsl(224, 21%, 14%);
+}
+
+html{
+    font-size:62.5%;
+    box-sizing: border-box;
+}
+*{
+    margin:0px;
+    padding:0px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+main{
+    display:flex;
+    flex-direction:column ;
+    align-items:center;
+    padding:2rem;
+    width:34rem;
+    gap:1rem;
+
+}
+p{
+    color:var(--dark-grayish-blue);
+    font-size:1.4rem;
+}
+#number{
+    background-color:var(--blue);
+    color:white;
+    padding:0.1rem 0.8rem;
+    font-size:1.4rem;
+    border-radius:0.4rem;
+}
+#notifications{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:34rem;
+}
+.paragraph-time{
+    color:var(--grayish-blue);
+    font-size:1.4rem;
+}
+#private-message{
+    border:1px solid var(--light-grayish-blue2);
+    padding:2rem;
+    border-radius:0.5rem;
+    margin-top:1rem;
+}
+#private-message p {
+    color:var(--dark-grayish-blue);
+    font-size:1.4rem;
+}
+#chess{
+    height:4rem;
+}
+#chess:hover{
+    cursor: pointer;
+}
+
+#button:hover{
+    color:var(--blue);
+    cursor: pointer;
+}
+#private-message:hover{
+    background-color: var(--light-grayish-blue2);
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:750px) {
+    body{
+        background-color: var(--very-light-grayish-blue);
+        justify-content: center;
+    }
+    main{
+        width:58rem;
+        background-color: var(--white);
+        padding:4rem;
+        border-radius:1rem;
+    }
+    #notifications{
+        width:60rem;
+    }
+    .comment{
+        width:58rem;
+    }
+    #chess{
+        margin-left:20rem;
+    }
+    
+}
